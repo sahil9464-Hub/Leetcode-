@@ -12,7 +12,7 @@ class Solution {
         arr2[y++] = nums[1];
 
         for(int i = 2; i < n; i++){
-            if(i % 2 == 0){
+            if(arr1 [x - 1] > arr2[y - 1]){
                 arr1[x++] = nums[i];
             } else{
                 arr2[y++] = nums[i];
