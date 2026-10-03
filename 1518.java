@@ -4,8 +4,9 @@ class Solution {
 
         while(numBottles >= numExchange){
             int newBottles = numBottles / numExchange;
-            numBottles = newBottles + (numBottles % numExchange);
             total += newBottles;
+            
+            numBottles = newBottles + (numBottles % numExchange);
         }
         return total;
     }
